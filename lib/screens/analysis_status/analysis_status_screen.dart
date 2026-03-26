@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../theme/app_text_styles.dart';
 import '../result/result_screen.dart';
 
@@ -44,12 +45,12 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
               ),
               const SizedBox(height: 48),
               Text(
-                'Scanning Link...',
+                AppLocalizations.of(context)!.scanning_link,
                 style: AppTextStyles.h1,
               ),
               const SizedBox(height: 16),
               Text(
-                'Checking for malware, phishing attempts, and suspicious redirection paths.',
+                AppLocalizations.of(context)!.analysis_description,
                 textAlign: TextAlign.center,
                 style: AppTextStyles.bodyMedium14.copyWith(color: Colors.grey),
               ),
@@ -60,7 +61,7 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
               ),
               const SizedBox(height: 12),
               Text(
-                'Analyzing security certificates (65%)',
+                AppLocalizations.of(context)!.analysis_progress,
                 style: AppTextStyles.bodyMedium14.copyWith(fontStyle: FontStyle.italic),
               ),
             ],

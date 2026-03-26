@@ -1,5 +1,6 @@
 import 'dart:core';
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../widgets/quick_action_card.dart';
 
 class BuildDetailItem extends StatelessWidget {
@@ -40,7 +41,7 @@ class BuildDetailItem extends StatelessWidget {
                 ],
               ),
             ),
-            StatusBadge(label: 'Warning', color: color),
+            StatusBadge(label:AppLocalizations.of(context)!.warning, color: color),
           ],
         ),
       ),

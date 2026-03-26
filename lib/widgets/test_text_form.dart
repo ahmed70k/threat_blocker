@@ -19,21 +19,18 @@ class TestTextFormField extends StatelessWidget {
       validator: validator,
       decoration: InputDecoration(
          prefixIcon: prefixIcon,
-        // prefixIconColor: ,
-       // labelText
-       //  errorStyle: ,
         hintStyle: hintStyle,
         hintText: hintText,
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(22),
           borderSide: BorderSide(color: AppColors.primary),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: AppColors.blueAction),
+          borderRadius: BorderRadius.circular(22),
+          borderSide: BorderSide(color: AppColors.primary),
         ),
         errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(22),
           borderSide: BorderSide(color: AppColors.error),
         ),
       ),

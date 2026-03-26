@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../authantication/Login/login_screen.dart';
 import '../../theme/app_text_styles.dart';
-import '../home/home_screen.dart';
-
 class SplashScreen extends StatefulWidget {
   static const String routeName = '/splash';
   const SplashScreen({super.key});
@@ -49,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 24),
             Text(
-              'Phishing Link\nAnalyzer',
+              AppLocalizations.of(context)!.phishing_link_analyzer,
               textAlign: TextAlign.center,
               style: AppTextStyles.h1.copyWith(
                 color: Colors.white,
@@ -59,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Stay safe in the digital world',
+                AppLocalizations.of(context)!.stay_safe_digital_world,
               style: AppTextStyles.bodyLarge16.copyWith(color: Colors.white70),
             ),
           ],

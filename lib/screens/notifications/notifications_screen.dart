@@ -1,4 +1,5 @@
 import  'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_text_styles.dart';
 
@@ -10,30 +11,30 @@ class NotificationsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final notifications = [
       {
-        'title': 'New Safety Tip',
-        'desc': 'Learn how to spot fake login pages in 3 easy steps.',
-        'time': '2h ago',
+        'title': AppLocalizations.of(context)!.newSafetyTip,
+        'desc': AppLocalizations.of(context)!.learnStayProtected,
+        'time': AppLocalizations.of(context)!.twoHoursAgo,
         'icon': Icons.lightbulb_outline_rounded,
         'color': AppColors.warning,
       },
       {
-        'title': 'System Update',
-        'desc': 'Our detection engine has been updated with the latest threat data.',
-        'time': 'Yesterday',
+        'title':AppLocalizations.of(context)!.systemUpdate ,
+        'desc': AppLocalizations.of(context)!.systemUpdateDesc,
+        'time':  AppLocalizations.of(context)!.yesterday,
         'icon': Icons.system_update_rounded,
         'color': AppColors.info,
       },
       {
-        'title': 'Scan Warning',
-        'desc': 'You recently scanned a link that was flagged as high risk.',
-        'time': '2 days ago',
+        'title': AppLocalizations.of(context)!.scanWarning,
+        'desc': AppLocalizations.of(context)!.scanWarningDesc,
+        'time': AppLocalizations.of(context)!.twoHoursAgo,
         'icon': Icons.warning_amber_rounded,
         'color': AppColors.error,
       },
     ];
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notifications'),
+        title: Text(AppLocalizations.of(context)!.notifications),
       ),
       body: SingleChildScrollView(
         child: ListView.separated(

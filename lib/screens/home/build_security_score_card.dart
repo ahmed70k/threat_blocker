@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import 'package:threat_blocker/theme/app_colors.dart';
 import '../../theme/app_text_styles.dart';
 
@@ -18,17 +19,17 @@ class BuildSecurityScoreCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Your Safety Score',
+                      AppLocalizations.of(context)!.safetyScorePercent,
                      style: AppTextStyles.bodyLarge16.copyWith(color: Colors.white),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Great Protection',
+                     AppLocalizations.of(context)!.greatProtection,
                       style: AppTextStyles.h1.copyWith(color: Colors.white),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '92%',
+                      AppLocalizations.of(context)!.safetyScorePercent,
                       style: AppTextStyles.h1.copyWith(
                         color: Colors.white.withOpacity(0.9),
                         fontSize: 48,

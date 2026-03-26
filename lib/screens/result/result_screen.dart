@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_text_styles.dart';
 import '../../widgets/quick_action_card.dart';
@@ -11,7 +12,7 @@ class ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Analysis Result'),
+        title:  Text(AppLocalizations.of(context)!.analysisResult),
         leading: IconButton(
           icon: const Icon(Icons.close_rounded),
           onPressed: () => Navigator.popUntil(context, (route) => route.isFirst),
@@ -25,30 +26,30 @@ class ResultScreen extends StatelessWidget {
             BuildResultHeader(),
             const SizedBox(height: 32),
             Text(
-              'Security Details',
+              AppLocalizations.of(context)!.securityDetails,
               style: AppTextStyles.h2,
             ),
             const SizedBox(height: 16),
             BuildDetailItem(
-              title: "Certificate",
+              title:  AppLocalizations.of(context)!.certificate,
               icon: Icons.verified_outlined,
               color: AppColors.warning,
-              description: "Valid but recently issued",
+              description: AppLocalizations.of(context)!.valid_recently_issued
             ),
             const SizedBox(height: 12),
             BuildDetailItem(
-              title: "Redirects",
+              title:  AppLocalizations.of(context)!.redirects,
               icon: Icons.directions_outlined,
               color: AppColors.error,
-              description: '3 redirects detected',
+              description: AppLocalizations.of(context)!.redirectsDesc
 
             ),
             const SizedBox(height: 12),
             BuildDetailItem(
-              title: 'Domain Age',
+              title: AppLocalizations.of(context)!.domainAge,
               icon: Icons.calendar_month_outlined,
               color: AppColors.error,
-              description: 'Only 4 days old',
+              description: AppLocalizations.of(context)!.only_four_days_old
             ),
             const SizedBox(height: 48),
             FilledButton(
@@ -56,7 +57,7 @@ class ResultScreen extends StatelessWidget {
                 Navigator.popUntil(context, (route) {
                   return route.isFirst;});
                 },
-              child: const Text('Return to Home'),
+              child:  Text(AppLocalizations.of(context)!.returnHome,),
             ),
             const SizedBox(height: 12),
             OutlinedButton(
@@ -65,7 +66,7 @@ class ResultScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
               ),
-              child: const Text('Report False Positive'),
+              child:  Text(AppLocalizations.of(context)!.reportFalsePositive,),
             ),
           ],
         ),

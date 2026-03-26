@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../theme/app_colors.dart';
 import '../../theme/app_text_styles.dart';
 import '../../widgets/quick_action_card.dart';
@@ -14,7 +15,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Phishing Analyzer', style: AppTextStyles.appBarTitle20),
+        title: Text(AppLocalizations.of(context)!.phishingAnalyzer, style: AppTextStyles.appBarTitle20),
         actions: [
           IconButton(
             onPressed: () =>
@@ -29,15 +30,15 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Security Overview', style: AppTextStyles.h1),
+            Text(AppLocalizations.of(context)!.securityOverview, style: AppTextStyles.h1),
             const SizedBox(height: 16),
             BuildSecurityScoreCard(),
             const SizedBox(height: 32),
-            Text('Quick Actions',style: AppTextStyles.h2),
+            Text(AppLocalizations.of(context)!.quickActions,style: AppTextStyles.h2),
             const SizedBox(height: 16),
             QuickActionCard(
-              title: 'Analyze Link',
-              description: 'Scan a suspicious URL for threats',
+              title: AppLocalizations.of(context)!.analyzeLink,
+              description: AppLocalizations.of(context)!.scanSuspiciousUrl,
               icon: Icons.link_rounded,
               onTap: () {
                 Navigator.pushNamed(context, SubmitLinkScreen.routeName);
@@ -45,16 +46,16 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             QuickActionCard(
-              title: 'Safety Tips',
-              description: 'Learn how to stay protected',
+              title:AppLocalizations.of(context)!.safetyTips,
+              description: AppLocalizations.of(context)!.learnStayProtected,
               icon: Icons.lightbulb_outline_rounded,
               color: AppColors.orangeAction,
               onTap: () {},
             ),
             const SizedBox(height: 12),
             QuickActionCard(
-              title: 'Recent Activity',
-              description: 'History of your scanned links',
+              title:AppLocalizations.of(context)!.recentActivity,
+              description: AppLocalizations.of(context)!.historyScannedLinks,
               icon: Icons.history_rounded,
               color: AppColors.blueAction,
               onTap: () {},

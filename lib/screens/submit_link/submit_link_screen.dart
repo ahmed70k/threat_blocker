@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import 'package:threat_blocker/widgets/test_text_form.dart';
 import '../../theme/app_text_styles.dart';
 import '../analysis_status/analysis_status_screen.dart';
@@ -11,7 +12,7 @@ class SubmitLinkScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Analyze Link'),
+        title:  Text(AppLocalizations.of(context)!.analyzeLink),
       ),
       body: Padding(
         padding: const EdgeInsets.all(24),
@@ -25,13 +26,13 @@ class SubmitLinkScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             Text(
-              'Enter URL to scan',
+              AppLocalizations.of(context)!.pleaseEnterUrl,
               textAlign: TextAlign.center,
               style: AppTextStyles.h1,
             ),
             const SizedBox(height: 12),
             Text(
-              'Copy and paste the link you want to verify. We will check it against our database of known threats.',
+              AppLocalizations.of(context)!.copyPasteLinkDescription,
               textAlign: TextAlign.center,
               style: AppTextStyles.bodyMedium14.copyWith(color: Colors.grey),
             ),
@@ -39,12 +40,12 @@ class SubmitLinkScreen extends StatelessWidget {
            TestTextFormField(validator:
           (value) {
             if (value == null || value.isEmpty) {
-              return "please enter URL";
+              return AppLocalizations.of(context)!.pleaseEnterUrl;
             }
             return null;
 
           },
-             hintText: 'https://example.com/login',
+             hintText: AppLocalizations.of(context)!.exampleUrlHint,
              prefixIcon: Icon(Icons.search_rounded),
            ),
             const Spacer(),
@@ -53,7 +54,7 @@ class SubmitLinkScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(builder: (context) => const AnalysisStatusScreen()),
               ),
-              child: const Text('Start Analysis'),
+              child:  Text(AppLocalizations.of(context)!.startAnalysis),
             ),
             const SizedBox(height: 16),
           ],
