@@ -15,8 +15,9 @@ void main() {
     MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => AppLanguageProvider()),
+          ChangeNotifierProvider(create: (_) => AppThemeProvider()),
         ],
-        child: MyApp()),
+        child: const MyApp()),
   );
 }
 

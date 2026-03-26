@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../authantication/Login/login_screen.dart';
 import '../../theme/app_text_styles.dart';
-import '../home/home_screen.dart';
-
 class SplashScreen extends StatefulWidget {
   static const String routeName = '/splash';
   const SplashScreen({super.key});
