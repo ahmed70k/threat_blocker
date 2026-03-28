@@ -6,7 +6,6 @@ import '../../theme/app_text_styles.dart';
 
 class BuildResultHeader extends StatelessWidget {
   const BuildResultHeader({super.key});
-
   @override
   Widget build(BuildContext context) {
 

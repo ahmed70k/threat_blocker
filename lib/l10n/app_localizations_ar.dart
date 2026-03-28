@@ -209,4 +209,166 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get stay_safe_digital_world => 'ابقَ آمناً في العالم الرقمي';
+
+  @override
+  String get signInToProceed => 'سجل الدخول للمتابعة إلى حسابك';
+
+  @override
+  String get dontHaveAccount => 'ليس لديك حساب؟ ';
+
+  @override
+  String get createAnAccount => 'قم بإنشاء حساب للبدء';
+
+  @override
+  String get register => 'تسجيل';
+
+  @override
+  String get safetyTipsTitle => 'موسوعة الأمان الرقمي';
+
+  @override
+  String get tip1Title => 'تحقق من الرابط بعناية';
+
+  @override
+  String get tip1Desc =>
+      'انظر دائماً لموقع النطاق (Domain) في شريط العنوان. المخترقون يستخدمون عناوين تشبه الأصلية تماماً (مثل paypa1.com بدلاً من paypal.com).';
+
+  @override
+  String get tip2Title => 'HTTPS لا يعني الأمان التام';
+
+  @override
+  String get tip2Desc =>
+      'أيقونة القفل تعني فقط أن الاتصال مشفر، وليس أن الموقع آمن أو حقيقي. تستخدم العديد من مواقع التصيد شهادات HTTPS لتبدو موثوقة.';
+
+  @override
+  String get tip3Title => 'الاستعجال علامة خطر';
+
+  @override
+  String get tip3Desc =>
+      'غالباً ما تحمل رسائل التصيد طابع الاستعجال (مثل: \'سيتم إغلاق حسابك خلال 24 ساعة\'). الشركات الحقيقية نادراً ما تتواصل بهذا الأسلوب.';
+
+  @override
+  String get tip4Title => 'احذر الروابط المختصرة';
+
+  @override
+  String get tip4Desc =>
+      'كن حذراً من الروابط التي تستخدم bit.ly أو غيرها عندما تصلك بشكل مفاجئ. استخدم أداتنا لفحصها دائماً قبل الضغط عليها.';
+
+  @override
+  String get tip5Title => 'احمِ بيانات دخولك';
+
+  @override
+  String get tip5Desc =>
+      'لا تشارك أبداً كلمة مرورك أو رمز التحقق (OTP) عبر البريد أو الدردشة. الجهات الموثوقة لن تطلب منك هذه البيانات أبداً.';
+
+  @override
+  String get activityHistory => 'سجل النشاط';
+
+  @override
+  String get noRecentActivity => 'لا يوجد نشاط أخير';
+
+  @override
+  String get safe => 'آمن';
+
+  @override
+  String get malicious => 'خبيث';
+
+  @override
+  String get suspicious => 'مشبوه';
+
+  @override
+  String get clearAll => 'مسح الكل';
+
+  @override
+  String get confirmReport => 'تأكيد الإبلاغ';
+
+  @override
+  String get reportMessage =>
+      'هل أنت متأكد أنك تريد الإبلاغ عن هذا الموقع كآمن؟ سيقوم فريقنا بمراجعته يدوياً.';
+
+  @override
+  String get cancel => 'إلغاء';
+
+  @override
+  String get report => 'إبلاغ';
+
+  @override
+  String get thankYouReporting => 'شكراً لمساهمتك! سنقوم بمراجعة الرابط.';
+
+  @override
+  String get serverLocation => 'موقع السيرفر';
+
+  @override
+  String get usa => 'الولايات المتحدة';
+
+  @override
+  String get ipAddress => 'عنوان الـ IP';
+
+  @override
+  String get sampleIp => '104.26.10.228';
+
+  @override
+  String get domain => 'الدومين';
+
+  @override
+  String get sampleDomain => 'google.com';
+
+  @override
+  String get copiedToClipboard => 'تم النسخ للحافظة';
+
+  @override
+  String get locationDetails => 'تفاصيل الموقع';
+
+  @override
+  String get city => 'المدينة';
+
+  @override
+  String get region => 'المنطقة';
+
+  @override
+  String get country => 'الدولة';
+
+  @override
+  String get coordinates => 'الإحداثيات';
+
+  @override
+  String get sampleCity => 'سان فرانسيسكو';
+
+  @override
+  String get sampleRegion => 'كاليفورنيا';
+
+  @override
+  String get viewOnMap => 'عرض على الخريطة';
+
+  @override
+  String get profile => 'الملف الشخصي';
+
+  @override
+  String get userName => 'أحمد محمد';
+
+  @override
+  String get scannedLinks => 'الروابط المفحوصة';
+
+  @override
+  String get threatsBlocked => 'التهديدات المحظورة';
+
+  @override
+  String get proProtectionPlan => 'خطة الحماية المتقدمة';
+
+  @override
+  String get accountFullyProtected => 'حسابك محمي بالكامل';
+
+  @override
+  String get accountSettings => 'إعدادات الحساب';
+
+  @override
+  String get theme => 'المظهر';
+
+  @override
+  String get language => 'اللغة';
+
+  @override
+  String get helpSupport => 'المساعدة والدعم';
+
+  @override
+  String get logOut => 'تسجيل الخروج';
 }

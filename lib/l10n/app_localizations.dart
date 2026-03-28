@@ -493,6 +493,318 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stay safe in the digital world'**
   String get stay_safe_digital_world;
+
+  /// No description provided for @signInToProceed.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to proceed to your account'**
+  String get signInToProceed;
+
+  /// No description provided for @dontHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account? '**
+  String get dontHaveAccount;
+
+  /// No description provided for @createAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create an account to get started'**
+  String get createAnAccount;
+
+  /// No description provided for @register.
+  ///
+  /// In en, this message translates to:
+  /// **'Register'**
+  String get register;
+
+  /// No description provided for @safetyTipsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Safety Knowledge Base'**
+  String get safetyTipsTitle;
+
+  /// No description provided for @tip1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify the URL carefully'**
+  String get tip1Title;
+
+  /// No description provided for @tip1Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Always look at the domain name in the address bar. Phishers often use addresses that look very similar to the real ones (e.g., paypa1.com instead of paypal.com).'**
+  String get tip1Desc;
+
+  /// No description provided for @tip2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'HTTPS is not a safety icon'**
+  String get tip2Title;
+
+  /// No description provided for @tip2Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'A lock icon only means the connection is encrypted, not that the site is legitimate. Many phishing sites use HTTPS certificates to appear trustworthy.'**
+  String get tip2Desc;
+
+  /// No description provided for @tip3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Urgency is a red flag'**
+  String get tip3Title;
+
+  /// No description provided for @tip3Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Phishing emails often create a false sense of urgency (e.g., \'Your account will be suspended in 24 hours\'). Legitimate companies will rarely communicate this way.'**
+  String get tip3Desc;
+
+  /// No description provided for @tip4Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid link shorteners from strangers'**
+  String get tip4Title;
+
+  /// No description provided for @tip4Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Be cautious of links using bit.ly or other shorteners when sent via unexpected SMS or DM. Use our tool to scan them before clicking.'**
+  String get tip4Desc;
+
+  /// No description provided for @tip5Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Protect your credentials'**
+  String get tip5Title;
+
+  /// No description provided for @tip5Desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Never share your password or OTP (One-Time Password) over email or chat. Legitimate organizations will never ask for them.'**
+  String get tip5Desc;
+
+  /// No description provided for @activityHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity History'**
+  String get activityHistory;
+
+  /// No description provided for @noRecentActivity.
+  ///
+  /// In en, this message translates to:
+  /// **'No recent activity found'**
+  String get noRecentActivity;
+
+  /// No description provided for @safe.
+  ///
+  /// In en, this message translates to:
+  /// **'Safe'**
+  String get safe;
+
+  /// No description provided for @malicious.
+  ///
+  /// In en, this message translates to:
+  /// **'Malicious'**
+  String get malicious;
+
+  /// No description provided for @suspicious.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspicious'**
+  String get suspicious;
+
+  /// No description provided for @clearAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear All'**
+  String get clearAll;
+
+  /// No description provided for @confirmReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Report'**
+  String get confirmReport;
+
+  /// No description provided for @reportMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to report this link as a safe site? Our team will review it manually.'**
+  String get reportMessage;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @report.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get report;
+
+  /// No description provided for @thankYouReporting.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you for your feedback! We will review the link.'**
+  String get thankYouReporting;
+
+  /// No description provided for @serverLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Server Location'**
+  String get serverLocation;
+
+  /// No description provided for @usa.
+  ///
+  /// In en, this message translates to:
+  /// **'United States'**
+  String get usa;
+
+  /// No description provided for @ipAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'IP Address'**
+  String get ipAddress;
+
+  /// No description provided for @sampleIp.
+  ///
+  /// In en, this message translates to:
+  /// **'104.26.10.228'**
+  String get sampleIp;
+
+  /// No description provided for @domain.
+  ///
+  /// In en, this message translates to:
+  /// **'Domain'**
+  String get domain;
+
+  /// No description provided for @sampleDomain.
+  ///
+  /// In en, this message translates to:
+  /// **'google.com'**
+  String get sampleDomain;
+
+  /// No description provided for @copiedToClipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied to clipboard'**
+  String get copiedToClipboard;
+
+  /// No description provided for @locationDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Location Details'**
+  String get locationDetails;
+
+  /// No description provided for @city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get city;
+
+  /// No description provided for @region.
+  ///
+  /// In en, this message translates to:
+  /// **'Region'**
+  String get region;
+
+  /// No description provided for @country.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get country;
+
+  /// No description provided for @coordinates.
+  ///
+  /// In en, this message translates to:
+  /// **'Coordinates'**
+  String get coordinates;
+
+  /// No description provided for @sampleCity.
+  ///
+  /// In en, this message translates to:
+  /// **'San Francisco'**
+  String get sampleCity;
+
+  /// No description provided for @sampleRegion.
+  ///
+  /// In en, this message translates to:
+  /// **'California'**
+  String get sampleRegion;
+
+  /// No description provided for @viewOnMap.
+  ///
+  /// In en, this message translates to:
+  /// **'View on Map'**
+  String get viewOnMap;
+
+  /// No description provided for @profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile;
+
+  /// No description provided for @userName.
+  ///
+  /// In en, this message translates to:
+  /// **'Ahmed Mohamed'**
+  String get userName;
+
+  /// No description provided for @scannedLinks.
+  ///
+  /// In en, this message translates to:
+  /// **'Scanned Links'**
+  String get scannedLinks;
+
+  /// No description provided for @threatsBlocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Threats Blocked'**
+  String get threatsBlocked;
+
+  /// No description provided for @proProtectionPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro Protection Plan'**
+  String get proProtectionPlan;
+
+  /// No description provided for @accountFullyProtected.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is fully protected'**
+  String get accountFullyProtected;
+
+  /// No description provided for @accountSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Settings'**
+  String get accountSettings;
+
+  /// No description provided for @theme.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get theme;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @helpSupport.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Support'**
+  String get helpSupport;
+
+  /// No description provided for @logOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Log Out'**
+  String get logOut;
 }
 
 class _AppLocalizationsDelegate

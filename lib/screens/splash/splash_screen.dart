@@ -9,14 +9,13 @@ class SplashScreen extends StatefulWidget {
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
-
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
     navigateToLoginScreen();
   }
-
+  /// Simulates a loading process by delaying for 3 seconds before navigating to the LoginScreen. It also checks if the widget is still mounted before attempting to navigate to prevent potential errors if the widget has been disposed.
   Future<void> navigateToLoginScreen() async {
     await Future.delayed(const Duration(seconds: 3));
     if (!mounted) return;
@@ -25,7 +24,6 @@ class _SplashScreenState extends State<SplashScreen> {
       MaterialPageRoute(builder: (context) => const LoginScreen()),
     );
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-                AppLocalizations.of(context)!.stay_safe_digital_world,
+              AppLocalizations.of(context)!.stay_safe_digital_world,
               style: AppTextStyles.bodyLarge16.copyWith(color: Colors.white70),
             ),
           ],
@@ -67,4 +65,3 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-

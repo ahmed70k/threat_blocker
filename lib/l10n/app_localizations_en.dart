@@ -211,4 +211,167 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get stay_safe_digital_world => 'Stay safe in the digital world';
+
+  @override
+  String get signInToProceed => 'Sign in to proceed to your account';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account? ';
+
+  @override
+  String get createAnAccount => 'Create an account to get started';
+
+  @override
+  String get register => 'Register';
+
+  @override
+  String get safetyTipsTitle => 'Safety Knowledge Base';
+
+  @override
+  String get tip1Title => 'Verify the URL carefully';
+
+  @override
+  String get tip1Desc =>
+      'Always look at the domain name in the address bar. Phishers often use addresses that look very similar to the real ones (e.g., paypa1.com instead of paypal.com).';
+
+  @override
+  String get tip2Title => 'HTTPS is not a safety icon';
+
+  @override
+  String get tip2Desc =>
+      'A lock icon only means the connection is encrypted, not that the site is legitimate. Many phishing sites use HTTPS certificates to appear trustworthy.';
+
+  @override
+  String get tip3Title => 'Urgency is a red flag';
+
+  @override
+  String get tip3Desc =>
+      'Phishing emails often create a false sense of urgency (e.g., \'Your account will be suspended in 24 hours\'). Legitimate companies will rarely communicate this way.';
+
+  @override
+  String get tip4Title => 'Avoid link shorteners from strangers';
+
+  @override
+  String get tip4Desc =>
+      'Be cautious of links using bit.ly or other shorteners when sent via unexpected SMS or DM. Use our tool to scan them before clicking.';
+
+  @override
+  String get tip5Title => 'Protect your credentials';
+
+  @override
+  String get tip5Desc =>
+      'Never share your password or OTP (One-Time Password) over email or chat. Legitimate organizations will never ask for them.';
+
+  @override
+  String get activityHistory => 'Activity History';
+
+  @override
+  String get noRecentActivity => 'No recent activity found';
+
+  @override
+  String get safe => 'Safe';
+
+  @override
+  String get malicious => 'Malicious';
+
+  @override
+  String get suspicious => 'Suspicious';
+
+  @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get confirmReport => 'Confirm Report';
+
+  @override
+  String get reportMessage =>
+      'Are you sure you want to report this link as a safe site? Our team will review it manually.';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get report => 'Report';
+
+  @override
+  String get thankYouReporting =>
+      'Thank you for your feedback! We will review the link.';
+
+  @override
+  String get serverLocation => 'Server Location';
+
+  @override
+  String get usa => 'United States';
+
+  @override
+  String get ipAddress => 'IP Address';
+
+  @override
+  String get sampleIp => '104.26.10.228';
+
+  @override
+  String get domain => 'Domain';
+
+  @override
+  String get sampleDomain => 'google.com';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard';
+
+  @override
+  String get locationDetails => 'Location Details';
+
+  @override
+  String get city => 'City';
+
+  @override
+  String get region => 'Region';
+
+  @override
+  String get country => 'Country';
+
+  @override
+  String get coordinates => 'Coordinates';
+
+  @override
+  String get sampleCity => 'San Francisco';
+
+  @override
+  String get sampleRegion => 'California';
+
+  @override
+  String get viewOnMap => 'View on Map';
+
+  @override
+  String get profile => 'Profile';
+
+  @override
+  String get userName => 'Ahmed Mohamed';
+
+  @override
+  String get scannedLinks => 'Scanned Links';
+
+  @override
+  String get threatsBlocked => 'Threats Blocked';
+
+  @override
+  String get proProtectionPlan => 'Pro Protection Plan';
+
+  @override
+  String get accountFullyProtected => 'Your account is fully protected';
+
+  @override
+  String get accountSettings => 'Account Settings';
+
+  @override
+  String get theme => 'Theme';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get helpSupport => 'Help & Support';
+
+  @override
+  String get logOut => 'Log Out';
 }

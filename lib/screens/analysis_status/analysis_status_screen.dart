@@ -38,7 +38,9 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
               const SizedBox(
                 width: 100,
                 height: 100,
-                child: CircularProgressIndicator(
+                child:
+                    /// Using CircularProgressIndicator to show that the analysis is in progress
+                CircularProgressIndicator(
                   strokeWidth: 8,
                   strokeCap: StrokeCap.round,
                 ),
@@ -55,6 +57,7 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
                 style: AppTextStyles.bodyMedium14.copyWith(color: Colors.grey),
               ),
               const SizedBox(height: 40),
+              /// Using LinearProgressIndicator to show the progress of the analysis
               LinearProgressIndicator(
                 borderRadius: BorderRadius.circular(10),
                 minHeight: 12,
@@ -62,7 +65,9 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
               const SizedBox(height: 12),
               Text(
                 AppLocalizations.of(context)!.analysis_progress,
-                style: AppTextStyles.bodyMedium14.copyWith(fontStyle: FontStyle.italic),
+                style: AppTextStyles.bodyMedium14.copyWith(
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ],
           ),
