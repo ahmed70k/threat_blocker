@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threat_blocker/l10n/app_localizations.dart';
 import '../../theme/app_text_styles.dart';
 import '../result/result_screen.dart';
 
@@ -37,31 +38,36 @@ class _AnalysisStatusScreenState extends State<AnalysisStatusScreen> {
               const SizedBox(
                 width: 100,
                 height: 100,
-                child: CircularProgressIndicator(
+                child:
+                    /// Using CircularProgressIndicator to show that the analysis is in progress
+                CircularProgressIndicator(
                   strokeWidth: 8,
                   strokeCap: StrokeCap.round,
                 ),
               ),
               const SizedBox(height: 48),
               Text(
-                'Scanning Link...',
+                AppLocalizations.of(context)!.scanning_link,
                 style: AppTextStyles.h1,
               ),
               const SizedBox(height: 16),
               Text(
-                'Checking for malware, phishing attempts, and suspicious redirection paths.',
+                AppLocalizations.of(context)!.analysis_description,
                 textAlign: TextAlign.center,
                 style: AppTextStyles.bodyMedium14.copyWith(color: Colors.grey),
               ),
               const SizedBox(height: 40),
+              /// Using LinearProgressIndicator to show the progress of the analysis
               LinearProgressIndicator(
                 borderRadius: BorderRadius.circular(10),
                 minHeight: 12,
               ),
               const SizedBox(height: 12),
               Text(
-                'Analyzing security certificates (65%)',
-                style: AppTextStyles.bodyMedium14.copyWith(fontStyle: FontStyle.italic),
+                AppLocalizations.of(context)!.analysis_progress,
+                style: AppTextStyles.bodyMedium14.copyWith(
+                  fontStyle: FontStyle.italic,
+                ),
               ),
             ],
           ),
